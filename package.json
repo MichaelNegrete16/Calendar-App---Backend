@@ -2,12 +2,15 @@
   "name": "10-calendar-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.jsx",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon index.jsx",
     "start": "node index.jsx"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
