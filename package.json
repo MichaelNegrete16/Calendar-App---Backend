@@ -1,0 +1,13 @@
+{
+  "name": "10-calendar-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "dev": "nodemon index.jsx",
+    "start": "node index.jsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
