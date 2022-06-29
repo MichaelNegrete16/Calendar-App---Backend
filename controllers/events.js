@@ -12,7 +12,7 @@ const getEventos = async (req,res = response) => {
     })
 }
 
-const crearEvento = async(req,res = repsonse) => {
+const crearEvento = async(req,res = response) => {
     
     const evento = new Evento(req.body)
 
@@ -20,7 +20,7 @@ const crearEvento = async(req,res = repsonse) => {
         evento.user = req.uid
         const eventoGuardado = await evento.save()
 
-        res.json({
+        res.status(200).json({
             ok:true,
             msg: eventoGuardado
         })
@@ -34,10 +34,6 @@ const crearEvento = async(req,res = repsonse) => {
         })
 
     }
-    res.status(200).json({
-        ok:true,
-        msg:'Crear Evento'
-    })
 }
 
 const actualizarEvento  = async (req,res = response) => {
