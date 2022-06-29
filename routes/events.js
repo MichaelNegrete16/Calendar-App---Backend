@@ -14,16 +14,16 @@ router.get('/',validarJWT, getEventos)
 // Crear Eventos
 router.post('/',[
     check('title','El titulo es obligatorio').not().isEmpty(),
-    check('startDate','La fecha de inicio es obligatorio').custom(isDate),
-    check('endDate','La fecha de finalizacion es obligatorio').custom(isDate),
+    check('start','La fecha de inicio es obligatorio').custom(isDate),
+    check('end','La fecha de finalizacion es obligatorio').custom(isDate),
     validarCampos,validarJWT
 ], crearEvento)
 
 // Actualizar evento
 router.put('/:id',[
     check('title','El titulo es obligatorio').not().isEmpty(),
-    check('startDate','La fecha de inicio es obligatorio').custom(isDate),
-    check('endDate','La fecha de finalizacion es obligatorio').custom(isDate),
+    check('start','La fecha de inicio es obligatorio').custom(isDate),
+    check('end','La fecha de finalizacion es obligatorio').custom(isDate),
     validarCampos,validarJWT
 ], actualizarEvento)
 
