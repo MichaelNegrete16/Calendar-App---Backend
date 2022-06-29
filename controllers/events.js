@@ -21,7 +21,7 @@ const crearEvento = async(req,res = repsonse) => {
         const eventoGuardado = await evento.save()
 
         res.json({
-            ok:false,
+            ok:true,
             msg: eventoGuardado
         })
 
